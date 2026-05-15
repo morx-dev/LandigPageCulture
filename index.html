@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture | Ropa & Tote Bags Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-zinc-50 text-zinc-900 font-sans antialiased">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="img/culture-img.jpeg" alt="Culture Logo" class="h-12 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wide uppercase">
+                <a href="#seccion-categorias" class="hover:text-pink-600 transition-colors">Categorías</a>
+                <a href="#seccion-galeria" class="hover:text-pink-600 transition-colors">Galería</a>
+            </div>
+            <a href="https://www.instagram.com/culturepop.gt" target="_blank" class="text-xl hover:text-pink-600 transition-colors">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+    <header class="relative h-[70vh] flex items-center justify-center bg-zinc-900 text-white overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1200" alt="Culture Premium" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="relative z-10 text-center px-4 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">Estilo único, <br><span class="text-pink-500">calidad premium.</span></h1>
+            <a href="#seccion-galeria" class="bg-white text-zinc-900 px-8 py-4 font-bold rounded-full hover:bg-pink-500 hover:text-white transition-all duration-300 uppercase text-sm tracking-widest">Explorar Galería</a>
+        </div>
+    </header>
+
+    <section id="seccion-categorias" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black tracking-tight uppercase italic">Nuestras Líneas</h2>
+            <div class="h-1 w-12 bg-pink-500 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
+                <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                    <h3 class="text-white font-black uppercase italic text-xl">Camisas</h3>
+                </div>
+            </div>
+            <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                    <h3 class="text-white font-black uppercase italic text-xl">Suéteres</h3>
+                </div>
+            </div>
+            <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                    <h3 class="text-white font-black uppercase italic text-xl">Tote Bags</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-galeria" class="bg-zinc-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black uppercase italic">Nuestra Colección</h2>
+                <p class="text-zinc-500 mt-2">Haz clic para ampliar</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="camisas">Camisas</button>
+                <button class="filter-btn" data-filter="sueteres">Suéteres</button>
+                <button class="filter-btn" data-filter="tote-bags">Tote Bags</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid"></div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 border-t border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img src="img/culture-img.jpeg" alt="Culture Logo" class="h-16 mx-auto mb-6 grayscale hover:grayscale-0 transition-all">
+            <div class="flex justify-center space-x-8 mb-8 text-2xl">
+                <a href="https://www.instagram.com/culturepop.gt" target="_blank" class="text-zinc-400 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50200000000" target="_blank" class="text-zinc-400 hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-zinc-400 text-xs tracking-widest uppercase">Culture © 2026 - Algodón Premium 100%</p>
+        </div>
+    </footer>
+
+    <div id="lightbox-modal" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 cursor-pointer">
+        <span class="absolute top-5 right-5 text-white text-4xl font-light">&times;</span>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl transform transition-transform duration-300 scale-95">
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

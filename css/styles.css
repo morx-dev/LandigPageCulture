@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Evita que el navbar fijo tape el inicio de la sección */
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+.filter-btn {
+    @apply px-5 py-2 border border-zinc-200 text-zinc-500 text-[10px] font-bold uppercase transition-all duration-300 rounded-full;
+}
+
+.filter-btn:hover {
+    @apply border-pink-400 text-pink-400;
+}
+
+.filter-btn.active {
+    @apply bg-pink-500 text-white border-pink-500 shadow-lg shadow-pink-200 scale-105;
+}
+
+/* Animación para el efecto flotante */
+#lightbox-modal.flex img {
+    scale: 1;
+}
+
+/* Y esto asegura que el modal flotante se vea centrado */
+#lightbox-modal.flex {
+    display: flex;
+}
+
+/* Animación para las tarjetas de la galería */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease backwards;
+}
