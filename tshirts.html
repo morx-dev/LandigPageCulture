@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture | Catálogo de T-Shirts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page-category="camisas" class="bg-zinc-50 text-zinc-900 font-sans antialiased">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="img/sin-fondo.jpeg" alt="Culture Logo" class="h-12 w-auto object-contain">
+            </a>
+            <div class="space-x-8 font-medium text-sm tracking-wide uppercase">
+                <a href="index.html" class="hover:text-pink-600 transition-colors"><i class="fas fa-arrow-left mr-2"></i>Volver al Inicio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-zinc-900 text-white py-16 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-transparent z-0"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight uppercase italic">Colección T-Shirts</h1>
+            <div class="h-1 w-12 bg-pink-500 mx-auto mt-4"></div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="max-w-md mx-auto mb-12 relative">
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-zinc-400">
+                <i class="fas fa-search text-xs"></i>
+            </div>
+            <input type="text" 
+                   id="search-input" 
+                   placeholder="Buscar catálogo (Ej: Demon Slayer, Tortugas ninja...)" 
+                   class="w-full pl-10 pr-4 py-3 bg-white border border-zinc-200 text-sm font-medium uppercase tracking-wider rounded-full focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all placeholder:text-zinc-400 placeholder:normal-case shadow-sm">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="catalog-grid">
+            </div>
+    </main>
+
+    <footer class="bg-white py-12 border-t border-zinc-100 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img src="img/culture-img.png" alt="Culture Logo" class="h-16 mx-auto mb-6 grayscale hover:grayscale-0 transition-all">
+            <p class="text-zinc-400 text-xs tracking-widest uppercase">Culture © 2026 - Algodón Premium 100%</p>
+        </div>
+    </footer>
+
+    <div id="lightbox-modal" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 cursor-pointer">
+        <span class="absolute top-5 right-5 text-white text-4xl font-light">&times;</span>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl transform transition-transform duration-300 scale-95">
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>

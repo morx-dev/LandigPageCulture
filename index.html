@@ -13,7 +13,7 @@
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-100">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center">
-                <img src="img/culture-img.jpeg" alt="Culture Logo" class="h-12 w-auto object-contain">
+                <img src="img/sin-fondo.jpeg" alt="Culture Logo" class="h-12 w-auto object-contain ">
             </a>
             <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wide uppercase">
                 <a href="#seccion-categorias" class="hover:text-pink-600 transition-colors">Categorías</a>
@@ -26,9 +26,9 @@
     </nav>
 
     <header class="relative h-[70vh] flex items-center justify-center bg-zinc-900 text-white overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1200" alt="Culture Premium" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <img src="img/header-img.png" alt="Culture Premium" class="absolute inset-0 w-full h-full object-cover opacity-40">
         <div class="relative z-10 text-center px-4 max-w-3xl">
-            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">Estilo único, <br><span class="text-pink-500">calidad premium.</span></h1>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">MODO URBANO,  <br><span class="text-pink-500">UN ESTILO DE VIDA.</span></h1>
             <a href="#seccion-galeria" class="bg-white text-zinc-900 px-8 py-4 font-bold rounded-full hover:bg-pink-500 hover:text-white transition-all duration-300 uppercase text-sm tracking-widest">Explorar Galería</a>
         </div>
     </header>
@@ -40,24 +40,32 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <h3 class="text-white font-black uppercase italic text-xl">TSHIRTS</h3>
+            <a href="tshirts.html" target="_blank" class="block">
+                <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
+                    <img src="img/tshirt2-img.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/20 flex items-end justify-center pb-2">
+                        <h3 class="text-white font-black uppercase italic text-xl">TSHIRTS</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <h3 class="text-white font-black uppercase italic text-xl">Suéteres</h3>
+            </a>
+
+            <a href="hoodies.html" target="_blank" class="block">
+                <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
+                    <img src="img/hoodie-img.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/20 flex items-end justify-center pb-2">
+                        <h3 class="text-white font-black uppercase italic text-xl">HOODIES</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <h3 class="text-white font-black uppercase italic text-xl">Tote Bags</h3>
+            </a>
+
+            <a href="t-over.html" target="_blank" class="block">
+                <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
+                    <img src="img/oversize-img.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/20 flex items-end justify-center pb-2">
+                        <h3 class="text-white font-black uppercase italic text-xl">T-OVER</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -69,10 +77,10 @@
             </div>
 
             <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-buttons">
-                <button class="filter-btn active" data-filter="todos">Todos</button>
-                <button class="filter-btn" data-filter="camisas">Camisas</button>
-                <button class="filter-btn" data-filter="sueteres">Suéteres</button>
-                <button class="filter-btn" data-filter="tote-bags">Tote Bags</button>
+                <button class="filter-btn active" data-filter="todos">MERCH</button>
+                <button class="filter-btn" data-filter="camisas">TSHIRTS</button>
+                <button class="filter-btn" data-filter="sueteres">HOODIES</button>
+                <button class="filter-btn" data-filter="tover">T-OVER</button>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid"></div>
@@ -81,7 +89,7 @@
 
     <footer class="bg-white py-12 border-t border-zinc-100">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <img src="img/culture-img.jpeg" alt="Culture Logo" class="h-16 mx-auto mb-6 grayscale hover:grayscale-0 transition-all">
+            <img src="img/culture-img.png" alt="Culture Logo" class="h-16 mx-auto mb-6 grayscale hover:grayscale-0 transition-all">
             <div class="flex justify-center space-x-8 mb-8 text-2xl">
                 <a href="https://www.instagram.com/culturepop.gt" target="_blank" class="text-zinc-400 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/50200000000" target="_blank" class="text-zinc-400 hover:text-green-500"><i class="fab fa-whatsapp"></i></a>

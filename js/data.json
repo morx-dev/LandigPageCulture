@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "titulo": "Camisa Tanjiro Kamado Premium",
+    "linea": "camisas",
+    "catalogo": "Catálogo KNY",
+    "precio": "Q150",
+    "imagen": "img/tshirt2-img.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo": "Hoodie Tortugas Ninja Retro",
+    "linea": "sueteres",
+    "catalogo": "Tortugas Ninja",
+    "precio": "Q225",
+    "imagen": "img/hoodie-img.jpeg"
+  },
+  {
+    "id": 3,
+    "titulo": "Oversize Nezuko Boxy Fit",
+    "linea": "tover",
+    "catalogo": "Demon Slayer",
+    "precio": "Q175",
+    "imagen": "img/oversize-img.jpeg"
+  },
+    {
+    "id": 4,
+    "titulo": "Travis Scott",
+    "linea": "camisas",
+    "catalogo": "Demon Slayer",
+    "precio": "Q175",
+    "imagen": "img/oversize-img.jpeg"
+  },
+      {
+    "id": 5,
+    "titulo": "Travis Scott",
+    "linea": "camisas",
+    "catalogo": "Catálogo KNY",
+    "precio": "Q175",
+    "imagen": "img/oversize-img.jpeg"
+  }
+]
