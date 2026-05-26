@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culture | Ropa & Tote Bags Premium</title>
+    
+    <!-- === CARGA DE DEPENDENCIAS EXTERNAS === -->
+    <!-- Tailwind CSS desde CDN para el estilizado mediante clases utilitarias -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para la inyección de iconos vectoriales (Instagram, WhatsApp, flechas) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados locales (animaciones, fuentes o ajustes específicos) -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-zinc-50 text-zinc-900 font-sans antialiased">
 
+    <!-- ==========================================
+         SECCIÓN: BARRA DE NAVEGACIÓN (NAVBAR)
+         ========================================== -->
+    <!-- Fondo blanco con 80% de opacidad, efecto de desenfoque de fondo (backdrop-blur) y fijado en la parte superior -->
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-100">
+        <!-- Contenedor adaptativo: flex-col en celulares y flex-row a partir de pantallas pequeñas (sm) -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
             
-            <a href="index.html" class="flex items-center">
-                <img src="img/culture-img.png" alt="Culture Logo" class="h-10 sm:h-12 w-auto object-contain">
+            <!-- Logotipo Principal con efecto de resplandor (Drop-shadow) basado en el contenedor 'group' -->
+            <a href="index.html" class="flex items-center group">
+                <img src="img/sin-fondo-black.png" 
+                     alt="Culture Logo" 
+                     class="h-10 sm:h-12 w-auto object-contain transition-all duration-300 filter drop-shadow-[0_0_6px_rgba(236,72,153,0.8)] group-hover:drop-shadow-[0_0_12px_rgba(236,72,153,1)]">
             </a>
             
+            <!-- Enlaces de Anclaje Interno: Navegación directa hacia las secciones de la misma página -->
             <div class="flex items-center space-x-6 sm:space-x-8 font-bold text-[11px] sm:text-sm tracking-widest uppercase">
-                <a href="#seccion-categorias" class="text-zinc-600 hover:text-pink-500 transition-colors duration-300">Categorías</a>
+                <a href="#seccion-lineas" class="text-zinc-600 hover:text-pink-500 transition-colors duration-300">Lineas</a>
                 <a href="#seccion-galeria" class="text-zinc-600 hover:text-pink-500 transition-colors duration-300">Galería</a>
+                <a href="#seccion-nosotros" class="text-zinc-600 hover:text-pink-500 transition-colors duration-300">Nosotros</a>
             </div>
             
+            <!-- Icono de Redes Sociales (Se oculta en móvil, visible 'flex' en pantallas sm o mayores) -->
             <div class="hidden sm:flex items-center">
                 <a href="https://instagram.com" target="_blank" class="text-zinc-800 hover:text-pink-500 transition-colors duration-300 text-lg">
                     <i class="fab fa-instagram"></i>
@@ -31,30 +47,52 @@
         </div>
     </nav>
 
+    <!-- ==========================================
+         SECCIÓN: ENCABEZADO PRINCIPAL (HERO / HEADER)
+         ========================================== -->
+    <!-- Ocupa el 70% de la altura de la pantalla visible (70vh), centra su contenido con flexbox -->
     <header class="relative h-[70vh] flex items-center justify-center bg-zinc-900 text-white overflow-hidden">
+        <!-- Imagen de fondo optimizada con opacidad reducida para garantizar la lectura del texto superior -->
         <img src="img/header-img.png" alt="Culture Premium" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        
+        <!-- Capa de texto sobrepuesta (z-10) con tipografía urbana, pesada y llamado a la acción -->
         <div class="relative z-10 text-center px-4 max-w-3xl">
-            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">MODO URBANO,  <br><span class="text-pink-500">UN ESTILO DE VIDA.</span></h1>
-            <a href="#seccion-galeria" class="bg-white text-zinc-900 px-8 py-4 font-bold rounded-full hover:bg-pink-500 hover:text-white transition-all duration-300 uppercase text-sm tracking-widest">Explorar Galería</a>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">
+                MODO URBANO, <br><span class="text-pink-500">UN ESTILO DE VIDA.</span>
+            </h1>
+            <!-- Botón con transición suave de colores que desplaza al usuario hasta la galería -->
+            <a href="#seccion-galeria" class="bg-white text-zinc-900 px-8 py-4 font-bold rounded-full hover:bg-pink-500 hover:text-white transition-all duration-300 uppercase text-sm tracking-widest">
+                Explorar Galería
+            </a>
         </div>
     </header>
 
-    <section id="seccion-categorias" class="max-w-7xl mx-auto px-6 py-20">
+    <!-- ==========================================
+         SECCIÓN: LÍNEAS DE PRODUCTOS / CATEGORÍAS
+         ========================================== -->
+    <section id="seccion-lineas" class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Título de la Sección -->
         <div class="text-center mb-16">
             <h2 class="text-3xl font-black tracking-tight uppercase italic">Nuestras Líneas</h2>
             <div class="h-1 w-12 bg-pink-500 mx-auto mt-4"></div>
         </div>
         
+        <!-- Cuadrícula de Categorías (1 columna en móvil, 3 columnas a partir de pantallas medianas 'md') -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Categoría 1: T-Shirts -->
             <a href="tshirts.html" target="_blank" class="block">
+                <!-- Efecto 'group' para controlar el zoom interno de la imagen al posicionar el cursor -->
                 <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
                     <img src="img/tshirt2-img.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <!-- Capa oscura traslúcida inferior que contiene el texto de la categoría -->
                     <div class="absolute inset-0 bg-black/20 flex items-end justify-center pb-2">
                         <h3 class="text-white font-black uppercase italic text-xl">TSHIRTS</h3>
                     </div>
                 </div>
             </a>
 
+            <!-- Categoría 2: Hoodies -->
             <a href="hoodies.html" target="_blank" class="block">
                 <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
                     <img src="img/hoodie-img.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -64,6 +102,7 @@
                 </div>
             </a>
 
+            <!-- Categoría 3: T-Over -->
             <a href="t-over.html" target="_blank" class="block">
                 <div class="bg-zinc-100 aspect-[3/4] rounded-2xl overflow-hidden relative group">
                     <img src="img/oversize-img.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -72,16 +111,22 @@
                     </div>
                 </div>
             </a>
+            
         </div>
     </section>
 
+    <!-- ==========================================
+         SECCIÓN: NUESTRA COLECCIÓN / GALERÍA DINÁMICA
+         ========================================== -->
     <section id="seccion-galeria" class="bg-zinc-100 py-20">
         <div class="max-w-7xl mx-auto px-6">
+            <!-- Título de la Sección de Muestrario -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-black uppercase italic">Nuestra Colección</h2>
                 <p class="text-zinc-500 mt-2">Haz clic para ampliar</p>
             </div>
 
+            <!-- Botones de Filtrado de la Galería (Asocian el filtro mediante el atributo 'data-filter') -->
             <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-buttons">
                 <button class="filter-btn active" data-filter="todos">MERCH</button>
                 <button class="filter-btn" data-filter="camisas">TSHIRTS</button>
@@ -89,26 +134,134 @@
                 <button class="filter-btn" data-filter="tover">T-OVER</button>
             </div>
 
+            <!-- Contenedor Objetivo para la Inyección de Productos -->
+            <!-- JavaScript utilizará este id ('gallery-grid') para renderizar las tarjetas físicas -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid"></div>
         </div>
     </section>
 
+    <!-- ==========================================
+         SECCIÓN: NOSOTROS (CULTURE DNA & ESSENTIALS)
+         ========================================== -->
+    <section id="seccion-nosotros" class="bg-white py-20 border-t border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Encabezado de la sección -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black tracking-tight uppercase italic">Culture Studio</h2>
+                <p class="text-zinc-500 mt-2 uppercase text-xs tracking-widest font-semibold">Calidad urbana sin compromisos</p>
+                <div class="h-1 w-12 bg-pink-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Contenedor Principal: Dividido en Historia/Manifiesto + Grid de Atributos -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna Izquierda (40% en PC): Manifiesto de la Marca -->
+                <div class="lg:col-span-5 space-y-6">
+                    <h3 class="text-xl font-black uppercase tracking-tight text-zinc-800">
+                        Más que ropa, <br>
+                        <span class="text-pink-500">un lenguaje visual.</span>
+                    </h3>
+                    <p class="text-zinc-600 text-sm leading-relaxed text-justify">
+                        Nacimos para romper con lo genérico. En **Culture** diseñamos piezas inspiradas en el movimiento de la calle, la cultura pop y las tendencias globales, ofreciendo un lienzo de expresión único para quienes no temen destacar.
+                    </p>
+                    <p class="text-zinc-600 text-sm leading-relaxed text-justify">
+                        No seguimos reglas de temporadas masivas; nos enfocamos en cápsulas de ropa urbana esenciales con un estándar exigente de manufactura y distribución directa.
+                    </p>
+                </div>
+
+                <!-- Columna Derecha (60% en PC): Rejilla Bento de Pilares (Tela, Precios, Envíos) -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    
+                    <!-- Tarjeta 1: La Tela (Algodón Premium) -->
+                    <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-100 hover:border-pink-500/30 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-pink-500 text-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-zinc-900 mb-2">Algodón Premium 100%</h4>
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Texturas suaves de alto gramaje, máxima transpirabilidad y alta resistencia al lavado. Diseñado para un calce estructurado e impecable.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 2: Precios Transparentes -->
+                    <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-100 hover:border-pink-500/30 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-pink-500 text-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-zinc-900 mb-2">Precios Justos</h4>
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Eliminamos los intermediarios innecesarios. Pagas estrictamente por calidad textil superior y diseños auténticos, sin sobreprecio.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 3: Servicio de Entrega -->
+                    <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-100 hover:border-pink-500/30 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-pink-500 text-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-zinc-900 mb-2">Envíos Seguros</h4>
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Coordinamos entregas directas y eficientes hasta la puerta de tu casa u oficina, empacado cuidadosamente para proteger cada prenda.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 4: Estampado Duradero -->
+                    <div class="p-6 bg-zinc-50 rounded-2xl border border-zinc-100 hover:border-pink-500/30 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-pink-500 text-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-fire-flame-curved"></i>
+                        </div>
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-zinc-900 mb-2">Impresión de Alta Definición</h4>
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Técnicas modernas de estampado textil que no se cuartean, no pierden color y mantienen vivos los detalles de cada diseño.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN: PIE DE PÁGINA (FOOTER)
+         ========================================== -->
     <footer class="bg-white py-12 border-t border-zinc-100">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <img src="img/culture-img.png" alt="Culture Logo" class="h-16 mx-auto mb-6 grayscale hover:grayscale-0 transition-all">
+            
+            <!-- Logotipo con transición de escala de grises y resplandor rosado activo en hover -->
+            <a href="index.html" class="inline-block group mb-6">
+                <img src="img/sin-fondo-black.png" 
+                    alt="Culture Logo" 
+                    class="h-16 mx-auto grayscale group-hover:grayscale-0 filter transition-all duration-300 drop-shadow-[0_0_6px_rgba(236,72,153,0.8)] group-hover:drop-shadow-[0_0_12px_rgba(236,72,153,1)]">
+            </a>
+            
+            <!-- Redes Sociales Oficiales y Canales de Venta Directa -->
             <div class="flex justify-center space-x-8 mb-8 text-2xl">
-                <a href="https://www.instagram.com/culturepop.gt" target="_blank" class="text-zinc-400 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/50200000000" target="_blank" class="text-zinc-400 hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/culturepop.gt" target="_blank" class="text-zinc-400 hover:text-pink-500 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50259595955" target="_blank" class="text-zinc-400 hover:text-green-500 transition-colors duration-300"><i class="fab fa-whatsapp"></i></a>
             </div>
+            
+            <!-- Texto de Copyright y Marca Registrada -->
             <p class="text-zinc-400 text-xs tracking-widest uppercase">Culture © 2026 - Algodón Premium 100%</p>
         </div>
     </footer>
 
+    <!-- ==========================================
+         SECCIÓN: MODAL LIGHTBOX (VISTA AMPLIADA)
+         ========================================== -->
+    <!-- Pantalla completa fija (fixed), oculta por defecto (hidden), se activa al dar clic sobre las imágenes de productos -->
     <div id="lightbox-modal" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 cursor-pointer">
+        <!-- Botón de cierre en la esquina superior derecha -->
         <span class="absolute top-5 right-5 text-white text-4xl font-light">&times;</span>
+        <!-- Imagen ampliada receptora del atributo dinámico 'src' -->
         <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl transform transition-transform duration-300 scale-95">
     </div>
 
+    <!-- ==========================================
+         SECCIÓN: CARGA DE SCRIPTS DE LOGIC DE NEGOCIO
+         ========================================== -->
+    <!-- Script modular principal que controla los eventos globales, filtrados de imágenes y lógica de la SPA -->
     <script type="module" src="js/main.js"></script>
 </body>
 </html>

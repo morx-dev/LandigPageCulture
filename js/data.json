@@ -1,42 +1,52 @@
-[
-  {
-    "id": 1,
-    "titulo": "Camisa Tanjiro Kamado Premium",
-    "linea": "camisas",
-    "catalogo": "Catálogo KNY",
-    "precio": "Q150",
-    "imagen": "img/tshirt2-img.jpeg"
-  },
-  {
-    "id": 2,
-    "titulo": "Hoodie Tortugas Ninja Retro",
-    "linea": "sueteres",
-    "catalogo": "Tortugas Ninja",
-    "precio": "Q225",
-    "imagen": "img/hoodie-img.jpeg"
-  },
-  {
-    "id": 3,
-    "titulo": "Oversize Nezuko Boxy Fit",
-    "linea": "tover",
-    "catalogo": "Demon Slayer",
-    "precio": "Q175",
-    "imagen": "img/oversize-img.jpeg"
-  },
-    {
-    "id": 4,
-    "titulo": "Travis Scott",
-    "linea": "camisas",
-    "catalogo": "Demon Slayer",
-    "precio": "Q175",
-    "imagen": "img/oversize-img.jpeg"
-  },
+{
+  "tortugas-ninja": {
+    "titulo": "Colección Tortugas Ninja",
+    "productos": [
       {
-    "id": 5,
-    "titulo": "Travis Scott",
-    "linea": "camisas",
-    "catalogo": "Catálogo KNY",
-    "precio": "Q175",
-    "imagen": "img/oversize-img.jpeg"
+        "id": "tn-01",
+        "nombre": "T-Shirt Donatello Retro",
+        "precio": "Q175.00",
+        "imagen": "img/tshirt2-img.jpeg",
+        "disponible": true
+      },
+      {
+        "id": "tn-02",
+        "nombre": "Oversize Vintage Group",
+        "precio": "Q195.00",
+        "imagen": "img/oversize-img.jpeg",
+        "disponible": true
+      }
+    ]
+  },
+  "demon-slayer": {
+    "titulo": "Demon Slayer Drop",
+    "productos": [
+      {
+        "id": "ds-01",
+        "nombre": "T-Shirt Tanjiro Kamado",
+        "precio": "Q175.00",
+        "imagen": "img/oversize-img.jpeg",
+        "disponible": true
+      },
+      {
+        "id": "ds-02",
+        "nombre": "Hoodie Rengoku Flame",
+        "precio": "Q295.00",
+        "imagen": "img/header-img.png",
+        "disponible": false
+      }
+    ]
+  },
+  "travis-scott": {
+    "titulo": "Travis Scott Hype",
+    "productos": [
+      {
+        "id": "ts-01",
+        "nombre": "Cactus Jack Oversize",
+        "precio": "Q210.00",
+        "imagen": "img/header-img.png",
+        "disponible": true
+      }
+    ]
   }
-]
+}
