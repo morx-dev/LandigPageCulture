@@ -1,52 +1,30 @@
-{
-  "tortugas-ninja": {
-    "titulo": "Colección Tortugas Ninja",
-    "productos": [
-      {
-        "id": "tn-01",
-        "nombre": "T-Shirt Donatello Retro",
-        "precio": "Q175.00",
-        "imagen": "img/tshirt2-img.jpeg",
-        "disponible": true
-      },
-      {
-        "id": "tn-02",
-        "nombre": "Oversize Vintage Group",
-        "precio": "Q195.00",
-        "imagen": "img/oversize-img.jpeg",
-        "disponible": true
-      }
-    ]
+[
+  {
+    "linea": "camisas",
+    "catalogo": "CHROME HEARTS",
+    "titulo": "T-Shirt Chrome Hearts Classic Cross Black",
+    "precio": "Q225.00",
+    "imagen": "PORTADAS-WEB/1.png"
   },
-  "demon-slayer": {
-    "titulo": "Demon Slayer Drop",
-    "productos": [
-      {
-        "id": "ds-01",
-        "nombre": "T-Shirt Tanjiro Kamado",
-        "precio": "Q175.00",
-        "imagen": "img/oversize-img.jpeg",
-        "disponible": true
-      },
-      {
-        "id": "ds-02",
-        "nombre": "Hoodie Rengoku Flame",
-        "precio": "Q295.00",
-        "imagen": "img/header-img.png",
-        "disponible": false
-      }
-    ]
+  {
+    "linea": "camisas",
+    "catalogo": "CHROME HEARTS",
+    "titulo": "T-Shirt Chrome Hearts Horseshoe White",
+    "precio": "Q225.00",
+    "imagen": "PORTADAS-WEB/2.png"
   },
-  "travis-scott": {
-    "titulo": "Travis Scott Hype",
-    "productos": [
-      {
-        "id": "ts-01",
-        "nombre": "Cactus Jack Oversize",
-        "precio": "Q210.00",
-        "imagen": "img/header-img.png",
-        "disponible": true
-      }
-    ]
+  {
+    "linea": "sueteres",
+    "catalogo": "CHROME HEARTS",
+    "titulo": "Hoodie Chrome Hearts Las Vegas Exclusive",
+    "precio": "Q350.00",
+    "imagen": "PORTADAS-WEB/3.png"
+  },
+  {
+    "linea": "camisas",
+    "catalogo": "TORTUGAS NINJA | TMNT",
+    "titulo": "T-Shirt TMNT Retro Vintage Streetwear",
+    "precio": "Q225.00",
+    "imagen": "PORTADAS-WEB/5.png"
   }
-}
+]
