@@ -1,30 +1,510 @@
-[
-  {
-    "linea": "camisas",
-    "catalogo": "CHROME HEARTS",
-    "titulo": "T-Shirt Chrome Hearts Classic Cross Black",
-    "precio": "Q225.00",
-    "imagen": "PORTADAS-WEB/1.png"
-  },
-  {
-    "linea": "camisas",
-    "catalogo": "CHROME HEARTS",
-    "titulo": "T-Shirt Chrome Hearts Horseshoe White",
-    "precio": "Q225.00",
-    "imagen": "PORTADAS-WEB/2.png"
-  },
-  {
-    "linea": "sueteres",
-    "catalogo": "CHROME HEARTS",
-    "titulo": "Hoodie Chrome Hearts Las Vegas Exclusive",
-    "precio": "Q350.00",
-    "imagen": "PORTADAS-WEB/3.png"
-  },
-  {
-    "linea": "camisas",
-    "catalogo": "TORTUGAS NINJA | TMNT",
-    "titulo": "T-Shirt TMNT Retro Vintage Streetwear",
-    "precio": "Q225.00",
-    "imagen": "PORTADAS-WEB/5.png"
-  }
-]
+{
+  "productos": [
+    {
+      "linea": "camisas",
+      "catalogo": "CHROME HEARTS",
+      "titulo": "T-Shirt Chrome Hearts Classic Cross Black",
+      "precio": "Q225.00",
+      "imagen": "PORTADAS-CAMISAS/1.png"
+    },
+    {
+      "linea": "camisas",
+      "catalogo": "CHROME HEARTS",
+      "titulo": "T-Shirt Chrome Hearts Horseshoe White",
+      "precio": "Q225.00",
+      "imagen": "PORTADAS-CAMISAS/2.png"
+    },
+    {
+      "linea": "camisas",
+      "catalogo": "CHROME HEARTS",
+      "titulo": "Hoodie Chrome Hearts Las Vegas Exclusive",
+      "precio": "Q350.00",
+      "imagen": "PORTADAS-CAMISAS/3.png"
+    },
+    {
+      "linea": "camisas",
+      "catalogo": "TORTUGAS NINJA | TMNT",
+      "titulo": "T-Shirt TMNT Retro Vintage Streetwear",
+      "precio": "Q225.00",
+      "imagen": "PORTADAS-CAMISAS/5.png"
+    }
+  ],
+  "colecciones": [
+    {
+      "linea": "camisas",
+      "nombre": "CHROME HEARTS",
+      "slug": "chrome-hearts",
+      "imagen": "PORTADAS-CAMISAS/1.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "TRAVIS SCOTT | CACTUS JACK",
+      "slug": "travis-scott-cactus-jack",
+      "imagen": "PORTADAS-CAMISAS/2.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "KENDRICK LAMAR | KDOT",
+      "slug": "kendrick-lamar-kdot",
+      "imagen": "PORTADAS-CAMISAS/3.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ENHYPEN",
+      "slug": "enhypen",
+      "imagen": "PORTADAS-CAMISAS/4.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "TORTUGAS NINJA | TMNT",
+      "slug": "tortugas-ninja-tmnt",
+      "imagen": "PORTADAS-CAMISAS/5.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "NEON GENESIS EVANGELION",
+      "slug": "neon-genesis-evangelion",
+      "imagen": "PORTADAS-CAMISAS/6.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "RAMEN",
+      "slug": "ramen",
+      "imagen": "PORTADAS-CAMISAS/7.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "DRAGON BALL Z",
+      "slug": "dragon-ball-z",
+      "imagen": "PORTADAS-CAMISAS/8.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "DEMON HUNTRX KPOP",
+      "slug": "demon-huntrx-kpop",
+      "imagen": "PORTADAS-CAMISAS/9.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BLUE LOCK",
+      "slug": "blue-lock",
+      "imagen": "PORTADAS-CAMISAS/10.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "MY HERO ACADEMIA",
+      "slug": "my-hero-academia",
+      "imagen": "PORTADAS-CAMISAS/11.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "SOLO LEVELING",
+      "slug": "solo-leveling",
+      "imagen": "PORTADAS-CAMISAS/12.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ALGUIEN DIJO CHAMBA",
+      "slug": "alguien-dijo-chamba",
+      "imagen": "PORTADAS-CAMISAS/13.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "HUGO BOSS",
+      "slug": "hugo-boss",
+      "imagen": "PORTADAS-CAMISAS/14.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "LED ZEPPELIN",
+      "slug": "led-zeppelin",
+      "imagen": "PORTADAS-CAMISAS/15.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "THE BEATLES",
+      "slug": "the-beatles",
+      "imagen": "PORTADAS-CAMISAS/16.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "LILO & STITCH",
+      "slug": "lilo-and-stitch",
+      "imagen": "PORTADAS-CAMISAS/17.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "THE WEEKND",
+      "slug": "the-weeknd",
+      "imagen": "PORTADAS-CAMISAS/18.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "GORILLAZ",
+      "slug": "gorillaz",
+      "imagen": "PORTADAS-CAMISAS/19.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "DEADPOOL",
+      "slug": "deadpool",
+      "imagen": "PORTADAS-CAMISAS/20.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "RUGRATS",
+      "slug": "rugrats",
+      "imagen": "PORTADAS-CAMISAS/21.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "IRON MAN",
+      "slug": "iron-man",
+      "imagen": "PORTADAS-CAMISAS/22.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "MICHAEL JACKSON",
+      "slug": "michael-jackson",
+      "imagen": "PORTADAS-CAMISAS/23.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "DÍA DE LA MADRE",
+      "slug": "da-de-la-madre",
+      "imagen": "PORTADAS-CAMISAS/24.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ANTISOCIAL SOCIAL CLUB",
+      "slug": "antisocial-social-club",
+      "imagen": "PORTADAS-CAMISAS/25.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "DEMON SLAYER | KIMETSU NO YAIBA",
+      "slug": "demon-slayer-kimetsu-no-yaiba",
+      "imagen": "PORTADAS-CAMISAS/26.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "MINECRAFT",
+      "slug": "minecraft",
+      "imagen": "PORTADAS-CAMISAS/27.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "POKEMON",
+      "slug": "pokemon",
+      "imagen": "PORTADAS-CAMISAS/28.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "KIRBY",
+      "slug": "kirby",
+      "imagen": "PORTADAS-CAMISAS/29.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "SÚPER MARIO BROS",
+      "slug": "sper-mario-bros",
+      "imagen": "PORTADAS-CAMISAS/30.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BLACK CLOVER",
+      "slug": "black-clover",
+      "imagen": "PORTADAS-CAMISAS/31.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ATTACK ON TITAN",
+      "slug": "attack-on-titan",
+      "imagen": "PORTADAS-CAMISAS/32.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "CHAINSAW MAN",
+      "slug": "chainsaw-man",
+      "imagen": "PORTADAS-CAMISAS/33.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ONE PIECE ANIME",
+      "slug": "one-piece-anime",
+      "imagen": "PORTADAS-CAMISAS/34.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "LONG BEACH WEST COAST",
+      "slug": "long-beach-west-coast",
+      "imagen": "PORTADAS-CAMISAS/35.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "RICK & MORTY",
+      "slug": "rick-and-morty",
+      "imagen": "PORTADAS-CAMISAS/36.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "RICO O MUERTO",
+      "slug": "rico-o-muerto",
+      "imagen": "PORTADAS-CAMISAS/37.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "HELLO KITTY",
+      "slug": "hello-kitty",
+      "imagen": "PORTADAS-CAMISAS/38.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ED SHEERAN",
+      "slug": "ed-sheeran",
+      "imagen": "PORTADAS-CAMISAS/39.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "SANTA CRUZ",
+      "slug": "santa-cruz",
+      "imagen": "PORTADAS-CAMISAS/40.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BTS",
+      "slug": "bts",
+      "imagen": "PORTADAS-CAMISAS/41.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "KUROMI",
+      "slug": "kuromi",
+      "imagen": "PORTADAS-CAMISAS/42.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "THRASHER",
+      "slug": "thrasher",
+      "imagen": "PORTADAS-CAMISAS/43.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "STEVEN RHODES",
+      "slug": "steven-rhodes",
+      "imagen": "PORTADAS-CAMISAS/44.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BATMAN",
+      "slug": "batman",
+      "imagen": "PORTADAS-CAMISAS/45.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "MINIONS",
+      "slug": "minions",
+      "imagen": "PORTADAS-CAMISAS/46.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "THE WICKED",
+      "slug": "the-wicked",
+      "imagen": "PORTADAS-CAMISAS/47.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BRAINROT",
+      "slug": "brainrot",
+      "imagen": "PORTADAS-CAMISAS/48.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "VERSACE",
+      "slug": "versace",
+      "imagen": "PORTADAS-CAMISAS/49.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "SONIC",
+      "slug": "sonic",
+      "imagen": "PORTADAS-CAMISAS/50.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BOCCHI THE ROCK",
+      "slug": "bocchi-the-rock",
+      "imagen": "PORTADAS-CAMISAS/51.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "DANDADAN",
+      "slug": "dandadan",
+      "imagen": "PORTADAS-CAMISAS/52.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "CHICAS SUPERPODEROSAS",
+      "slug": "chicas-superpoderosas",
+      "imagen": "PORTADAS-CAMISAS/53.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "FENDI",
+      "slug": "fendi",
+      "imagen": "PORTADAS-CAMISAS/54.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "SAKAMOTO DAYS",
+      "slug": "sakamoto-days",
+      "imagen": "PORTADAS-CAMISAS/55.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BALENCIAGA",
+      "slug": "balenciaga",
+      "imagen": "PORTADAS-CAMISAS/56.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "KAIJU NO. 8",
+      "slug": "kaiju-no-8",
+      "imagen": "PORTADAS-CAMISAS/57.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "TOJI FUSHIGURO (ESPECIAL)",
+      "slug": "toji-fushiguro-especial",
+      "imagen": "PORTADAS-CAMISAS/58.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "AMIRI",
+      "slug": "amiri",
+      "imagen": "PORTADAS-CAMISAS/59.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "NASA",
+      "slug": "nasa",
+      "imagen": "PORTADAS-CAMISAS/60.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "SAILOR MOON",
+      "slug": "sailor-moon",
+      "imagen": "PORTADAS-CAMISAS/61.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "LATIN MAFIA",
+      "slug": "latin-mafia",
+      "imagen": "PORTADAS-CAMISAS/62.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "CALVIN KLEIN",
+      "slug": "calvin-klein",
+      "imagen": "PORTADAS-CAMISAS/63.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "TOMMY HILFIGER",
+      "slug": "tommy-hilfiger",
+      "imagen": "PORTADAS-CAMISAS/64.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "ONE PUNCH MAN",
+      "slug": "one-punch-man",
+      "imagen": "PORTADAS-CAMISAS/65.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "BLACK PINK",
+      "slug": "black-pink",
+      "imagen": "PORTADAS-CAMISAS/66.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "THE GRINCH",
+      "slug": "the-grinch",
+      "imagen": "PORTADAS-CAMISAS/67.png",
+      "badge": "Cápsula Activa"
+    },
+    {
+      "linea": "camisas",
+      "nombre": "CORRIDOS TUMBADOS",
+      "slug": "corridos-tumbados",
+      "imagen": "PORTADAS-CAMISAS/68.png",
+      "badge": "Cápsula Activa"
+    }
+  ]
+}

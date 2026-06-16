@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     async function cargarCatalogo() {
         try {
             const respuesta = await fetch('js/data.json');
-            todosLosProductos = await respuesta.json();
+            const datos = await respuesta.json();
+            todosLosProductos = datos.productos;
             
             // Colocar el título dinámico en el Header basado en los productos encontrados
             actualizarTituloCabecera();
